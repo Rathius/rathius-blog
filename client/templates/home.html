@@ -1,0 +1,20 @@
+<template name="home">
+{{#markdown}}
+## Welcome to my Single Page App
+Here I'm talking about my latest discoveries from the world of Meteor.
+{{/markdown}}
+
+	<!-- Template helpers and how to displaying data -->
+<!--	{{exampleHelper}}
+
+    {{#blockHelperExample myValue=false}}
+        <span>Some Content</span>
+    {{else}}
+        <span>Some Warning</span>
+	{{/blockHelperExample}}  -->
+	
+	{{#each postsList}}
+	    {{> postInList}}
+    {{/each}}
+	
+</template>
